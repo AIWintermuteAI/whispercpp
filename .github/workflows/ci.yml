@@ -37,7 +37,7 @@ jobs:
       - name: Setup CI
         uses: ./.github/actions/setup-repo
         with:
-          python-version: '3.11' # sync with default version in WORKSPACE.
+          python-version: '3.11.8' # sync with default version in WORKSPACE.
       - name: Install development dependencies and bindings
         run: |
           bazel run pypi_update
