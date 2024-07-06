@@ -11,3 +11,4 @@ pytest-asyncio
 build
 virtualenv
 twine
+importlib-metadata==4.13
