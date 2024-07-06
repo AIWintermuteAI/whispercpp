@@ -41,12 +41,8 @@ jobs:
       - name: Install development dependencies and bindings
         run: |
           bazel run pypi_update
+          python -m pip debug -v
           python -m pip install -r requirements/pypi.txt
-          ls /opt/hostedtoolcache/Python/
-          ls /opt/hostedtoolcache/Python/3.11.8/
-          ls /opt/hostedtoolcache/Python/3.11.8/x64/
-          ls /opt/hostedtoolcache/Python/3.11.8/x64/include/
-          ls /opt/hostedtoolcache/Python/3.11.8/x64/include/python3.11/
           python -m pip install .
       - name: Run tests on python${{ matrix.python-version }}
         run: bazel test tests:ci examples/...
