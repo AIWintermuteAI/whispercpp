@@ -96,7 +96,7 @@ def internal_deps():
     # Override python rules defined under @com_github_bentoml_plugins
     http_archive(
         name = "rules_python",
-        sha256 = "b0a45e1fdaade7ac4975a9dfa08a170b78e209ba717946f7d397a75dc8a9fda6",
-        strip_prefix = "rules_python-4e3d01c9f6a6cda0fb34b7c2961d6b1ef5313218",
-        url = "https://github.com/bazelbuild/rules_python/archive/4e3d01c9f6a6cda0fb34b7c2961d6b1ef5313218.tar.gz",
+        sha256 = "3d6fe72f1a056b3462f02afba5049210acbaec131087fb19082fa6792198a9fa",
+        strip_prefix = "rules_python-084b877c98b580839ceab2b071b02fc6768f3de6",
+        url = "https://github.com/bazelbuild/rules_python/archive/084b877c98b580839ceab2b071b02fc6768f3de6.tar.gz",
     )
